@@ -8,7 +8,7 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
 
 public interface APIService {
-    @POST("/test/")
+    @POST("/Project/androidcapture/")
     @FormUrlEncoded
-    Call<Post> saveData(@Field("phoneNumber") String phoneNumber, @Field("IMEI") String IMEI);
+    Call<Post> saveData(@Field("phone") String phone, @Field("IMEI") String IMEI,@Field("name") String name);
 }

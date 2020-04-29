@@ -4,28 +4,37 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class Post {
-    @SerializedName("phoneNumber")
+    @SerializedName("phone")
     @Expose
-    private String phoneNumber;
+    private String phone;
     @SerializedName("IMEI")
     @Expose
     private String IMEI;
+    @SerializedName("name")
+    @Expose
+    private String name;
 
-    public String getTitle() {
-        return phoneNumber;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setTitle(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
-    public String getBody() {
+    public String getIMEI() {
         return IMEI;
     }
 
-    public void setBody(String IMEI) {
+    public void setIMEI(String IMEI) {
         this.IMEI = IMEI;
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
 }
